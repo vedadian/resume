@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Behrooz} % Your first name
+\familyname{Vedadian} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{R\'{e}sum\'{e}}
+\address{South Kerman Street, Rezayee Alley, No.7, Unit 6}{Tehran, Iran}
+\mobile{+98 915 584 0296}
+\phone{+98 21 2250 2137}
+\fax{}
+\email{vedadian@aut.ac.ir}
+\homepage{vedadian.com}{vedadian.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2013--Present}{Ph.D. Student}{Amirkabir University of Technology(\href{http://www.usnews.com/education/best-global-universities/amirkabir-university-of-technology-506266}{\#79 in CS})}{Artificial Intelligence}{\textit{GPA -- 19/20}}
+{
+Research field: ``Statistical Machine Translation'' under supervision of Dr. Mohammad Rahmati and Dr. Shahram Khadivi
+}  
+
+\cventry{2005--2008}{M.Sc.}{Amirkabir University of Technology(\href{http://www.usnews.com/education/best-global-universities/amirkabir-university-of-technology-506266}{\#79 in CSE})}{Communication Systems Engineering}{\textit{GPA -- 15.01/20}}
+{
+Thesis title: ``Signal Detection in nonstationary environments using WaveLets'' under supervision of Dr. Hamidreza Amindavar
+}
+
+\cventry{2000--2005}{B.Sc.}{Sharif University of Technology(\href{http://www.usnews.com/education/best-global-universities/sharif-university-of-technology-502898}{\#60 in Engineering})}{Electrical Engineering}{\textit{GPA -- 15.10/20}}
+{
+Thesis title: ``Speaker identification using HMMs'' under supervision of Dr. Mohmmad Mahdi Nayebi
+}
+
+\cventry{1996--2000}{Diploma}{National Organization of Developement of Exceptional Talents(\href{https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents}{NODET})}{Mathematics and Physics}{\textit{GPA -- 19.5/20}}
+{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2015--Present}{Researcher and Senior Software Engineer}{\textsc{Targoman Intelligent Processing Co.}}{Tehran}{}{\begin{itemize}
+\item A Computer Assistant for translation was designed and implemented which is named \href{http://tarjomyar.ir}{Tarjomyar}, built using javascript language while preserving the modularity and object oriented design.
+\item An experimental Neural Machine Translator for English-Persian was trained and successfully integrated into \href{http://new.tarjomyar.ir}{Tarjomyar}.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2013--2015}{Researcher and Senior Software Engineer}{\textsc{HLT Lab}}{Amirkabir University of Technology}{}{\begin{itemize}
+\item We used Moses open source statistical translation system to develop an online translation service for Persian-English languages.
+\item A text processing library was developed to preprocess,tokenize and enhance input sentences given to translation service.
+\item We also developed a \emph{robust} open source phrase based statistical machine translation decoder title \href{http://targoman.com}{Targoman} available on \href{https://github.com/Targoman/Source}{GitHub}. This was done to remedy the instability and unintegrated software design of Moses toolkit.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2009--2014}{R\&D Engineer}{\textsc{Hoda System Co. Ltd.}}{Tehran}{}{\begin{itemize}
+\item We developed a Persian printed text recognition software which included layout analysis.
+\item We also tailored the OCR library for extraction of Egyptian ID card information in course of cooperation with Egypt City Bank Co.
+\item We also incorporated natural language processing for improving the OCR results quality
+\item I developed a couple Web Applications for a demonstration version of digital document archiving that used OCR and image processing techniques to ease information extraction
+\end{itemize}}
+
+%------------------------------------------------
+
+\subsection{Teaching}
+
+\cventry{2001}{Teacher's Assistant}{\textsc{Computer Programming}}{Sharif University of Technology}{}{}
+\cventry{2014}{Teacher's Assistant}{\textsc{Statistical Natural Language Processing}}{Amirkabir University of Technology}{}{Instructed by Dr. Shahram Khadivi}
+
+\subsection{Miscellaneous}
+
+\cventry{1998--2013}{Freelance}{}{}{}{I have participated in various software development tasks using wide range of tools and programming languages ranging from \texttt{FoxPro}! to \texttt{8051 assembly} and prepared a detailed Pascal programming tutorial for \href{http://olympiad.roshd.ir/About/AboutUs.aspx?OlympiadName=Physics}{Roshd magazine}.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{1997}{Ranked 5\textsuperscript{th} in Iranian national computer programming contest, held in Tehran.}
+\cvitem{1998}{Ranked 3\textsuperscript{rd} in Iranian national computer programming contest, held in Isfahan.}
+\cvitem{1999}{Qualified to enter the second level of national students Physiscs Olympiad}
+\cvitem{1999}{Qualified to enter the second level of national students Mathematics Olympiad}
+\cvitem{2013}{Ranked 9\textsuperscript{th} in national Ph.D. entrance examination}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{Perl, \textsc{Java}, Inkscape}
+\cvitem{Intermediate}{\textsc{Python}, Linux, \texttt{BASh} Scripting, Adobe Photoshop}
+\cvitem{Advanced}{\texttt{C++}, C\#, \LaTeX, MatLab, PHP, \textsc{html}, JavaScript, \textsc{CSS}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Persian}{Mothertongue}{}
+\cvitemwithcomment{English}{Fluent}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Research on Machine Learning}{Mathematics}
+\cvlistdoubleitem{Drawing and Painting}{Graphic Design}
+\cvlistitem{Storytelling and Cinema}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
