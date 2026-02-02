@@ -1,0 +1,90 @@
+\DocumentMetadata{pdfversion=2.0, pdfstandard=UA-2, lang=en}
+\documentclass[letterpaper, hidelinks, 11pt]{article}
+\usepackage{mteck}
+
+\newcommand{\tfrac}[2]{%
+  \ensuremath{%
+    \raisebox{0.15ex}{$#1$}%
+    \kern-0.075em/\kern-0.075em%
+    \raisebox{-0.15ex}{$#2$}%
+  }%
+}
+
+\newcommand{\exprDetail}[1]{\hspace{2em} -- #1\\}
+
+\begin{document}
+
+% Name and details
+\documentTitle{Behrooz Vedadian}{%
+  \href{mailto:vedadian@gmail.com}{\raisebox{-0.15\height} \faEnvelope\ vedadian@gmail.com}\Spacer%
+  \href{https://www.linkedin.com/in/behrooz-vedadian/}{\raisebox{-0.15\height} \faLinkedin\ www.linkedin.com/in/behrooz-vedadian}\Spacer%
+  \href{https://github.com/vedadian}{\raisebox{-0.15\height} \faGithub\ github.com/vedadian}
+}
+% Title / Skills
+\vspace{-0.9em}
+\documentTitleTwo{Senior AI Engineer and Architect}{\textbf{%
+    AI Systems Engineer \Spacer End-to-End AI \Spacer Deep Learning Engineer\\
+    Software Architect \Spacer Applied AI Research
+  }}
+% Summary
+\tinysection{Summary}
+{Senior AI engineer combining learning theory, algorithmic rigor, and craftsmanship in end-to-end AI systems, from model design to production deployment.}
+% Highlights
+\section{Highlights}
+\begin{resume_list}
+  \item Proposed a Graph Signal Processing–based neural architecture (GSP-NN) in a
+  \B{2015 PhD proposal}\\ \hfill \textit{(first-principles model design;
+    conceptually equivalent to later attention mechanisms — see
+    \href{https://github.com/vedadian/phd_proposal_2015/}{proposal}, p. 35)}
+  \vskip3mm
+  \item Designed and implemented Tarjomyar (\B{Document Layout Analysis + Machine
+    Translation})\\ \hfill \textit{(document layout analysis, 3-person training
+    team lead, API and UX/UI design; primary revenue channel)} \vskip3mm
+  \item Contributed to national neural machine translation engine\\
+  \hfill\textit{(system design, 3-person training lead, production serving;
+    \B{80M requests/day} peak)} \vskip3mm
+  \item Contributed to Hoda OCR system used for \B{2006 national census in Iran}\\
+  \hfill \textit{(MLP training, feature engineering, CPU optimization)}
+  \item Designed ID card reader software for City Bank of Egypt\\ \hfill \textit{(fast
+    template matching + 7-gram alphabet language model)}
+\end{resume_list}
+% Skills
+\section{Key Skills}
+\begin{resume_list}
+  \item \B{Programming}: C++, Python, TypeScript (systems, performance-critical, and production code)
+  \item \B{Deep Learning}: Model design and training with PyTorch and TensorFlow; model deployment via ONNX
+  \item \B{Serving \& Interfaces}: API and service using Flask, FastAPI, Oat++, and libevent; user interfaces with ReactJS
+  \item \B{Mathematics}: Linear algebra, optimization, modern statistics, and matrix calculus applied in learning systems
+\end{resume_list}
+% Education
+\section{Education}
+\begin{resume_list}
+  \item \B{PhD (coursework and research completed)} in Artificial Intelligence (Machine Translation)\\
+  at \BIt{AmirKabir University of Tech.}, GPA: $\tfrac{19}{20}$
+  \item \B{MSc} in Communications Engineering (signal processing) at \BIt{AmirKabir University of Tech.}, GPA: $\tfrac{15.01}{20}$
+  \item \B{BSc} in Electrical Engineering (signal processing) at \BIt{Sharif University of Tech.}, GPA: $\tfrac{15.1}{20}$
+  \item \B{Math \& Physics Diploma} from \BIt{National Organization for Development of Exceptional Talents}\\
+  (selective honors program), GPA: $\tfrac{19.5}{20}$
+\end{resume_list}
+% Work Experience
+\section{Work Experience}
+\experience{Targoman Co. Pjs.}{Researcher / Senior AI Architect / Co-founder}{hybrid}{2015 -- 2024}
+\exprDetail{Long-term ownership of neural machine translation systems from research through production}
+\exprDetail{Architectural design and technical decision-making across model training, serving, and product integration}
+\exprDetail{Built and maintained training, deployment, and evaluation pipelines for translation models}
+
+\experience{Faraadid Co. Pjs.}{Researcher / Senior AI Engineer}{hybrid}{2017}
+\exprDetail{Systems-level work on secure model serving, including model decryption and runtime integration}
+\exprDetail{Computation graph optimization and simplification for efficient inference}
+\exprDetail{Applied computer vision systems for real-time vehicle tracking}
+
+\experience{AmirKabir UoT, HLT Lab}{Researcher / Senior Software Architect}{on-site}{2013 -- 2015}
+\exprDetail{Architectural design and development of large-scale statistical machine translation systems}
+\exprDetail{Creation of core text processing infrastructure later reused in production translation platforms}
+
+\experience{Hoda System Co. Ltd.}{AI Engineer / Application Developer}{on-site}{2006; 2009 -- 2014}
+\exprDetail{Early-career development of OCR and machine learning systems under CPU and resource constraints}
+\exprDetail{Hands-on work across data preprocessing, feature engineering, model training, and performance optimization}
+\exprDetail{Production debugging and reliability work in deployed document processing systems}
+
+\end{document}
